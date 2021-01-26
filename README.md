@@ -32,7 +32,7 @@ A typical `CRUD` implementation allows the user or admin to create, read, update
 - Make a new page edit.php
 - When clicking on an edit link for an entry, the edit page is loaded for that specific item
 - When the edit form is submitted, the relevant entry in the database is updated
-
+haha
 ### Step 4: delete
 - Build a link to delete.php that will delete a specific product from the database
 - Afterwards, it will redirect to the overview
