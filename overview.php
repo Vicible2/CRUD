@@ -13,11 +13,41 @@
 
 <ul>
 <?php foreach ($cards as $card) : ?>
-    <li><?= $card['name'] ?></li>
+    <li><?= $card['Name'] . " " . $card['Unit Type'] ?></li>
 <?php endforeach; ?>
 </ul>
 
-<form action="" method="post">
+<br>
+<hr>
+<h2>Skaven Army</h2>
+<table id='warbase'>
+
+  <tr>
+    <th>Name</th>
+    <th>Unit Type</th>
+    <th>Amount of units</th>
+    <th>Faction</th>
+  </tr>
+
+<?php foreach ($cards as $card) : ?>
+	<tr>
+    	<td> <?= $card['Name']?> </td>
+    	<td> <?= $card['Unit Type']?> </td>
+    	<td> <?= $card['Amount of Units']?> </td>
+    	<td> <?= $card['Faction']?> </td>
+  </tr>
+<?php endforeach; ?>
+
+</table>
+<br>
+<hr>
+<br>
+<form action="" method="POST">
+<!-- Pick your Race-->
+<input type="radio" name="race" value="skaven">Skaven
+<input type="radio" name="race" value="ossiarch">Ossiarch Bonereapers
+<input type="radio" name="race" value="seraphon">Seraphon
+
 <label for="unitName">Name:</label><br>
 <input type="text" id="unitName" name="unitName"><br>
 
@@ -30,8 +60,13 @@
 <label for="faction">Faction:</label><br>
 <input type="text" id="faction" name="faction"><br>
 <br>
-<input type="submit" value="submit">
+<input type="submit" value="submit" name="submit">
 </form>
 
+<?php 
+echo "<pre>";
+var_dump($_POST);
+echo "</pre>";
+?>
 </body>
 </html>
