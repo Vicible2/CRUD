@@ -27,6 +27,10 @@ $cards = $cardRepository->create();
 //load all data
 $cards = $cardRepository->get();
 
+//$totalPoints = $cardRepository->totalPoints();
+
+
+
 
 
 // Load your view

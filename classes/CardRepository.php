@@ -71,6 +71,17 @@ class CardRepository
 
     }
 
+    // public function totalPoints()
+    //TODO: Calculate all points from row Points
+    // {
+    //     $totalPoints = $this->databaseManager->database->query("SELECT SUM(Points) FROM `skaven`");
+    //     if(!$totalPoints){
+    //         //var dump an error inside database when error/mistake occurs
+    //         var_dump($this->databaseManager->database->error);
+    //     }
+    //      var_dump($totalPoints);
+    // }
+
     public function delete()
     {
 
