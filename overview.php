@@ -17,5 +17,21 @@
 <?php endforeach; ?>
 </ul>
 
+<form action="" method="post">
+<label for="unitName">Name:</label><br>
+<input type="text" id="unitName" name="unitName"><br>
+
+<label for="unitType">Unit Type:</label><br>
+<input type="text" id="unitType" name="unitType"><br>
+
+<label for="unitAmount">Amount of Units:</label><br>
+<input type="number" id="unitAmount" name="unitAmount"><br>
+
+<label for="faction">Faction:</label><br>
+<input type="text" id="faction" name="faction"><br>
+<br>
+<input type="submit" value="submit">
+</form>
+
 </body>
 </html>
