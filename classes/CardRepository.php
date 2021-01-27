@@ -23,7 +23,7 @@ class CardRepository
             $addType = $_POST['unitType'];
             $addAmount = $_POST['unitAmount'];
             $addFaction = $_POST['faction'];
-            $addRace = $_POST[''];
+            //$addRace = $_POST[''];
             //var_dump($addName, $addType);
             
 
