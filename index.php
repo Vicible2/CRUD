@@ -11,7 +11,7 @@ error_reporting(E_ALL);
 // Load you classes
 require_once 'config.php';
 require_once 'classes/DatabaseManager.php';
-require_once 'classes/CardRepository.php';
+require_once 'classes/ModelRepository.php';
 
 $databaseManager = new DatabaseManager($config['host'], $config['user'], $config['password']);
 $databaseManager->connect();
@@ -20,14 +20,14 @@ $databaseManager->connect();
 
 // This example is about a Pokémon card collection
 // Update the naming if you'd like to work with another collection
-$cardRepository = new CardRepository($databaseManager);
+$modelRepository = new ModelRepository($databaseManager);
 
 //load function to add Cards to database
-$cards = $cardRepository->create();
+$cards = $modelRepository->create();
 //load all data
-$cards = $cardRepository->get();
+$cards = $modelRepository->get();
 
-//$totalPoints = $cardRepository->totalPoints();
+//$totalPoints = $modelRepository->totalPoints();
 
 
 
