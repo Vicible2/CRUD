@@ -43,7 +43,7 @@
 			<td> <?= $card['Amount of Units']?> </td>
 			<td> <?= $card['Faction']?> </td>
 			<td> <?= $card['Points']?> </td>
-			<td> edit link</td>
+			<td class="btn btn-outline-light mb-2 mt-2"> edit link</td>
 		</tr>
 		
 		<?php endforeach; ?>
