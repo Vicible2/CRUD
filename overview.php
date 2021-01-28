@@ -11,9 +11,12 @@
 
 </head>
 
-<body>
+<body class="text-light bg-dark">
 
-	<h1 class="text-center text-light bg-dark">WarBase - track your collection of Warhammer Armies!</h1>
+<blockquote class="blockquote text-center "> <p class="mb-2 h1">WarBase</p>
+<footer class="blockquote-footer text-right">Track your collection of Warhammer Armies! </footer>
+</blockquote>
+
 
 	<ul>
 		<?php foreach ($cards as $card) : ?>
@@ -56,12 +59,12 @@
 	</table>
 
 	<hr>
-<h2>Total amount of points:</h2>
+<h2 class="text-center">Total amount of points:</h2>
 <h4>  </h4>
 	<br>
 	<hr>
 	<br>
-	<form action="" method="POST">
+	<form action="" method="POST" class="text-center">
 		<!-- Pick your Race-->
 		<input type="radio" name="race" value="skaven">Skaven
 		<input type="radio" name="race" value="ossiarch">Ossiarch Bonereapers
