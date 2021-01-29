@@ -16,5 +16,32 @@
 	Save/submit edit button 
 	When saved, go back to overview.php, overview loads edited data.
 	
+
+<!-- Add edit row -->
+	<form action="" method="POST" class="text-center">
+		<!-- Pick your Race-->
+		<input type="radio" name="race" value="skaven">Skaven
+		<input type="radio" name="race" value="ossiarch">Ossiarch Bonereapers
+		<input type="radio" name="race" value="seraphon">Seraphon
+		<br>
+
+		<label for="unitName">Name:</label><br>
+		<input type="text" id="unitName" name="unitName"><br>
+
+		<label for="unitType">Unit Type:</label><br>
+		<input type="text" id="unitType" name="unitType"><br>
+
+		<label for="unitAmount">Amount of Units:</label><br>
+		<input type="number" id="unitAmount" name="unitAmount"><br>
+
+		<label for="faction">Faction:</label><br>
+		<input type="text" id="faction" name="faction"><br>
+
+		<label for="points">Points:</label><br>
+		<input type="text" id="points" name="points"><br>
+		<br>
+		<input type="edit" value="edit" name="edit">
+	</form>
+
 </body>
 </html>

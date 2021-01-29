@@ -52,9 +52,7 @@
 			<th scope="col"> </th>
 			<th scope="col"> </th>
 			<th scope="col"> </th>
-			<!-- <th scope="col"> <?php $totalPoints = 0; foreach($card['Points'] as $points) { $points += $points;}
-			echo $totalpoints;
-				?></th> -->
+			<th scope="col"> <?= $totalPoints ?></th>
 		</tr>
 	</table>
 

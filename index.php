@@ -15,7 +15,7 @@ require_once 'classes/ModelRepository.php';
 
 $databaseManager = new DatabaseManager($config['host'], $config['user'], $config['password']);
 $databaseManager->connect();
-
+$connectionMade = $databaseManager->database;
 
 
 // This example is about a Pokémon card collection
@@ -27,7 +27,7 @@ $cards = $modelRepository->create();
 //load all data
 $cards = $modelRepository->get();
 
-//$totalPoints = $modelRepository->totalPoints();
+$totalPoints = $modelRepository->totalPoints();
 
 
 
