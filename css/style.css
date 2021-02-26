@@ -12,6 +12,7 @@ body .armies {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 20px;
 }
 
 body .armies .armyTables {
@@ -22,6 +23,7 @@ body .armies .armyTables {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 2vw;
 }
 
 body .armies .armyTables .armyLogos {

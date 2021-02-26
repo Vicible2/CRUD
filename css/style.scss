@@ -10,9 +10,11 @@ body {
   }
   .armies {
       display: flex;
+      padding: 20px;
     .armyTables {
       display: flex;
       flex-direction: column;
+      padding: 2vw;
       .armyLogos {
         width: auto;
         align-self: center;
