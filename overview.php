@@ -154,8 +154,12 @@
 		<input type="number" id="unitAmount" name="unitAmount"><br>
 
 		<label for="faction">Faction:</label><br>
-		<input type="text" id="faction" name="faction"><br>
-
+		<select id="faction" name="faction"><br>
+		<option value=" " selected> </option>
+					<option value="Grand Alliance Chaos">Grand Alliance Chaos</option>
+					<option value="Grand Alliance Death">Grand Alliance Death</option>
+					<option value="Grand Alliance Order">Grand Alliance Order</option>
+		</select> <br>
 		<label for="points">Points:</label><br>
 		<input type="text" id="points" name="points"><br>
 		<br>
