@@ -4,6 +4,12 @@
 }
 
 body {
+    .basiclist{
+        margin-top: 4vh;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
   .warBase {
     font-family: "WarBase", sans-serif;
     font-size: 9rem;

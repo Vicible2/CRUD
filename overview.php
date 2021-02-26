@@ -16,16 +16,33 @@
 
 <body class="text-light bg-dark">
 
-<blockquote class="blockquote text-center "> <p class="mb-2 h1 warBase">WarBase</p>
-<footer class="blockquote-footer text-right">Track your collection of Age of Sigmar Armies! </footer>
-</blockquote>
+	<blockquote class="blockquote text-center "> <p class="mb-2 h1 warBase">WarBase</p>
+	<footer class="blockquote-footer text-right">Track your collection of Age of Sigmar Armies! </footer>
+	</blockquote>
 
-
-	<ul>
-		<?php foreach ($skavenCards as $skavenCard): ?>
-		<li><?=$skavenCard['Name'] . " " . $skavenCard['Unit Type']?></li>
-		<?php endforeach;?>
-	</ul>
+	<div class="basicList">
+		<div class="basicListSkaven">
+			<ul>
+				<?php foreach ($skavenCards as $skavenCard): ?>
+				<li><?=$skavenCard['Name'] . " - " . $skavenCard['Unit Type']?></li>
+				<?php endforeach;?>
+			</ul>
+		</div>
+		<div class="basicListOSB">
+		<ul>
+			<?php foreach ($OSBCards as $OSBCard): ?>
+			<li><?=$OSBCard['Name'] . " " . $OSBCard['Unit Type']?></li>
+			<?php endforeach;?>
+		</ul>
+		</div>
+		<div class="basicListSeraphon">
+		<ul>
+			<?php foreach ($seraphonCards as $seraphonCard): ?>
+			<li><?=$seraphonCard['Name'] . " " . $seraphonCard['Unit Type']?></li>
+			<?php endforeach;?>
+		</ul>
+		</div>
+	</div>
 
 	<br>
 	<hr>

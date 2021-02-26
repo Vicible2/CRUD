@@ -3,6 +3,20 @@
   src: url("../fonts/long_shot/Long_Shot.ttf");
 }
 
+body .basiclist {
+  margin-top: 4vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 body .warBase {
   font-family: "WarBase", sans-serif;
   font-size: 9rem;
