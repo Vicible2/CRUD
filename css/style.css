@@ -62,15 +62,15 @@ body .footer .footerSubsection1 {
   width: 100%;
 }
 
-body .footer p {
-  margin-bottom: 0;
-}
-
-body .footer .AoSLogo {
+body .footer .footerSubsection1 .AoSLogo {
   width: 20vw;
 }
 
-body .footer .footerwarBase {
+body .footer .footerSubsection1 .footerwarBase {
   font-size: 6rem;
+}
+
+body .footer p {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

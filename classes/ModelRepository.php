@@ -45,7 +45,7 @@ class ModelRepository
     }
 
     // Get all
-    public function get()
+    public function getSkaven()
     {
         // TODO: replace dummy data by real one
         // return [
@@ -55,13 +55,55 @@ class ModelRepository
         //     ['name' => 'Necropolis Stalkers'],
         // ];
 
-        $get = $this->databaseManager->database->query("SELECT * FROM skaven");
-        if(!$get){
+        $getSkaven = $this->databaseManager->database->query("SELECT * FROM skaven");
+        if(!$getSkaven){
             //var dump an error inside database when error/mistake occurs
             var_dump($this->databaseManager->database->error);
         }
 
-        return $get;
+        return $getSkaven;
+        // We get the database connection first, so we can apply our queries with it
+        // return $this->databaseManager->database-> (runYourQueryHere)
+    }
+
+    public function getOSB()
+    {
+        // TODO: replace dummy data by real one
+        // return [
+        //     ['name' => 'Gothizzar Harvester'],
+        //     ['name' => 'Liege Kavalos'],
+        //     ['name' => 'Mortek Guard'],
+        //     ['name' => 'Necropolis Stalkers'],
+        // ];
+
+        $getOSB = $this->databaseManager->database->query("SELECT * FROM ossiarch_bonereapers");
+        if(!$getOSB){
+            //var dump an error inside database when error/mistake occurs
+            var_dump($this->databaseManager->database->error);
+        }
+
+        return $getOSB;
+        // We get the database connection first, so we can apply our queries with it
+        // return $this->databaseManager->database-> (runYourQueryHere)
+    }
+
+    public function getSeraphon()
+    {
+        // TODO: replace dummy data by real one
+        // return [
+        //     ['name' => 'Gothizzar Harvester'],
+        //     ['name' => 'Liege Kavalos'],
+        //     ['name' => 'Mortek Guard'],
+        //     ['name' => 'Necropolis Stalkers'],
+        // ];
+
+        $getSeraphon = $this->databaseManager->database->query("SELECT * FROM seraphon");
+        if(!$getSeraphon){
+            //var dump an error inside database when error/mistake occurs
+            var_dump($this->databaseManager->database->error);
+        }
+
+        return $getSeraphon;
         // We get the database connection first, so we can apply our queries with it
         // return $this->databaseManager->database-> (runYourQueryHere)
     }

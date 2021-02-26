@@ -23,9 +23,15 @@ $connectionMade = $databaseManager->database;
 $modelRepository = new ModelRepository($databaseManager);
 
 //load function to add skaven Cards to database
-$cards = $modelRepository->create();
+$skavenCards = $modelRepository->create();
+$OSBCards = $modelRepository->create();
+$seraphonCards = $modelRepository->create();
+
 //load all skaven data
-$cards = $modelRepository->get();
+$skavenCards = $modelRepository->getSkaven();
+$OSBCards = $modelRepository->getOSB();
+$seraphonCards = $modelRepository->getSeraphon();
+
 
 $totalPoints = $modelRepository->totalPoints();
 

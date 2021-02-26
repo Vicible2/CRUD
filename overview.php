@@ -22,8 +22,8 @@
 
 
 	<ul>
-		<?php foreach ($cards as $card): ?>
-		<li><?=$card['Name'] . " " . $card['Unit Type']?></li>
+		<?php foreach ($skavenCards as $skavenCard): ?>
+		<li><?=$skavenCard['Name'] . " " . $skavenCard['Unit Type']?></li>
 		<?php endforeach;?>
 	</ul>
 
@@ -43,13 +43,13 @@
 						<th scope="col">Faction</th>
 						<th scope="col">Points</th>
 					</tr>
-					<?php foreach ($cards as $card): ?>
+					<?php foreach ($skavenCards as $skavenCard): ?>
 					<tr>
-						<td> <?=$card['Name']?> </td>
-						<td> <?=$card['Unit Type']?> </td>
-						<td> <?=$card['Amount of Units']?> </td>
-						<td> <?=$card['Faction']?> </td>
-						<td> <?=$card['Points']?> </td>
+						<td> <?=$skavenCard['Name']?> </td>
+						<td> <?=$skavenCard['Unit Type']?> </td>
+						<td> <?=$skavenCard['Amount of Units']?> </td>
+						<td> <?=$skavenCard['Faction']?> </td>
+						<td> <?=$skavenCard['Points']?> </td>
 						<td class="btn btn-outline-light mb-2 mt-2"> edit link</td>
 					</tr>
 
@@ -77,13 +77,13 @@
 					<th scope="col">Faction</th>
 					<th scope="col">Points</th>
 				</tr>
-				<?php foreach ($cards as $card): ?>
+				<?php foreach ($OSBCards as $OSBcard): ?>
 				<tr>
-					<td> <?=$card['Name']?> </td>
-					<td> <?=$card['Unit Type']?> </td>
-					<td> <?=$card['Amount of Units']?> </td>
-					<td> <?=$card['Faction']?> </td>
-					<td> <?=$card['Points']?> </td>
+					<td> <?=$OSBcard['Name']?> </td>
+					<td> <?=$OSBcard['Unit Type']?> </td>
+					<td> <?=$OSBcard['Amount of Units']?> </td>
+					<td> <?=$OSBcard['Faction']?> </td>
+					<td> <?=$OSBcard['Points']?> </td>
 					<td class="btn btn-outline-light mb-2 mt-2"> edit link</td>
 				</tr>
 
@@ -110,13 +110,13 @@
 					<th scope="col">Faction</th>
 					<th scope="col">Points</th>
 				</tr>
-				<?php foreach ($cards as $card): ?>
+				<?php foreach ($seraphonCards as $seraphonCard): ?>
 				<tr>
-					<td> <?=$card['Name']?> </td>
-					<td> <?=$card['Unit Type']?> </td>
-					<td> <?=$card['Amount of Units']?> </td>
-					<td> <?=$card['Faction']?> </td>
-					<td> <?=$card['Points']?> </td>
+					<td> <?=$seraphonCard['Name']?> </td>
+					<td> <?=$seraphonCard['Unit Type']?> </td>
+					<td> <?=$seraphonCard['Amount of Units']?> </td>
+					<td> <?=$seraphonCard['Faction']?> </td>
+					<td> <?=$seraphonCard['Points']?> </td>
 					<td class="btn btn-outline-light mb-2 mt-2"> edit link</td>
 				</tr>
 
