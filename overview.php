@@ -8,6 +8,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>WarBase - track your collection of Warhammer Armies!</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -19,43 +21,109 @@
 
 
 	<ul>
-		<?php foreach ($cards as $card) : ?>
-		<li><?= $card['Name'] . " " . $card['Unit Type'] ?></li>
-		<?php endforeach; ?>
+		<?php foreach ($cards as $card): ?>
+		<li><?=$card['Name'] . " " . $card['Unit Type']?></li>
+		<?php endforeach;?>
 	</ul>
 
 	<br>
 	<hr>
-	<h2 class="text-center text-light bg-dark">Skaven Army</h2>
-	<table id='warbase' class="table table-sm table-hover table-dark">
+	<div class="armies d-flex">
+		<div class="skavenTable">
+			<h2 class="text-center text-light bg-dark">Skaven</h2>
+				<table id='warbase' class="table table-sm table-hover table-dark">
 
-		<tr>
-			<th scope="col">Name</th>
-			<th scope="col">Unit Type</th>
-			<th scope="col">Amount of units</th>
-			<th scope="col">Faction</th>
-			<th scope="col">Points</th>
-		</tr>
-		<?php foreach ($cards as $card) : ?>
-		<tr>
-			<td> <?= $card['Name']?> </td>
-			<td> <?= $card['Unit Type']?> </td>
-			<td> <?= $card['Amount of Units']?> </td>
-			<td> <?= $card['Faction']?> </td>
-			<td> <?= $card['Points']?> </td>
-			<td class="btn btn-outline-light mb-2 mt-2"> edit link</td>
-		</tr>
-		
-		<?php endforeach; ?>
-		<tr>
-			<th scope="col"> Total points: </th>
-			<th scope="col"> </th>
-			<th scope="col"> </th>
-			<th scope="col"> </th>
-			<th scope="col"> <?= $totalPoints ?></th>
-		</tr>
-	</table>
+					<tr>
+						<th scope="col">Name</th>
+						<th scope="col">Unit Type</th>
+						<th scope="col">Amount of units</th>
+						<th scope="col">Faction</th>
+						<th scope="col">Points</th>
+					</tr>
+					<?php foreach ($cards as $card): ?>
+					<tr>
+						<td> <?=$card['Name']?> </td>
+						<td> <?=$card['Unit Type']?> </td>
+						<td> <?=$card['Amount of Units']?> </td>
+						<td> <?=$card['Faction']?> </td>
+						<td> <?=$card['Points']?> </td>
+						<td class="btn btn-outline-light mb-2 mt-2"> edit link</td>
+					</tr>
 
+					<?php endforeach;?>
+					<tr>
+						<th scope="col"> Total points: </th>
+						<th scope="col"> </th>
+						<th scope="col"> </th>
+						<th scope="col"> </th>
+						<th scope="col"> <?=$totalPoints?></th>
+					</tr>
+				</table>
+			</div>
+
+		<div class="OSBTable">
+			<h2 class="text-center text-light bg-dark">Ossiarch Bonereapers</h2>
+			<table id='warbase' class="table table-sm table-hover table-dark">
+
+				<tr>
+					<th scope="col">Name</th>
+					<th scope="col">Unit Type</th>
+					<th scope="col">Amount of units</th>
+					<th scope="col">Faction</th>
+					<th scope="col">Points</th>
+				</tr>
+				<?php foreach ($cards as $card): ?>
+				<tr>
+					<td> <?=$card['Name']?> </td>
+					<td> <?=$card['Unit Type']?> </td>
+					<td> <?=$card['Amount of Units']?> </td>
+					<td> <?=$card['Faction']?> </td>
+					<td> <?=$card['Points']?> </td>
+					<td class="btn btn-outline-light mb-2 mt-2"> edit link</td>
+				</tr>
+
+				<?php endforeach;?>
+				<tr>
+					<th scope="col"> Total points: </th>
+					<th scope="col"> </th>
+					<th scope="col"> </th>
+					<th scope="col"> </th>
+					<th scope="col"> <?=$totalPoints?></th>
+				</tr>
+			</table>
+		</div>
+		<div class="seraphonTable">
+			<h2 class="text-center text-light bg-dark">Seraphon</h2>
+			<table id='warbase' class="table table-sm table-hover table-dark">
+
+				<tr>
+					<th scope="col">Name</th>
+					<th scope="col">Unit Type</th>
+					<th scope="col">Amount of units</th>
+					<th scope="col">Faction</th>
+					<th scope="col">Points</th>
+				</tr>
+				<?php foreach ($cards as $card): ?>
+				<tr>
+					<td> <?=$card['Name']?> </td>
+					<td> <?=$card['Unit Type']?> </td>
+					<td> <?=$card['Amount of Units']?> </td>
+					<td> <?=$card['Faction']?> </td>
+					<td> <?=$card['Points']?> </td>
+					<td class="btn btn-outline-light mb-2 mt-2"> edit link</td>
+				</tr>
+
+				<?php endforeach;?>
+				<tr>
+					<th scope="col"> Total points: </th>
+					<th scope="col"> </th>
+					<th scope="col"> </th>
+					<th scope="col"> </th>
+					<th scope="col"> <?=$totalPoints?></th>
+				</tr>
+			</table>
+		</div>
+	</div>
 	<hr>
 <h2 class="text-center">Total amount of points:</h2>
 <h4>  </h4>
@@ -88,7 +156,7 @@
 	</form>
 
 
-	<?php 
+	<?php
 echo "<pre>";
 var_dump($_POST);
 echo "</pre>";
