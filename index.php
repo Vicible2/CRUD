@@ -22,9 +22,9 @@ $connectionMade = $databaseManager->database;
 // Update the naming if you'd like to work with another collection
 $modelRepository = new ModelRepository($databaseManager);
 
-//load function to add Cards to database
+//load function to add skaven Cards to database
 $cards = $modelRepository->create();
-//load all data
+//load all skaven data
 $cards = $modelRepository->get();
 
 $totalPoints = $modelRepository->totalPoints();
