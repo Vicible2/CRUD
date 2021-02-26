@@ -171,12 +171,21 @@ echo "</pre>";
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 <div class="footer" id="footer">
-	<div>
-		<p>WarBase - a Warhammer: Age of Sigmar army building tool.
-		<br> Made by fans. Not affiliated with Games Workshop™ in any way.</p>
+	<div class="footerSubsection1">
+		<div class="warBase footerwarBase">
+			<p>WarBase</p>
+		</div>
+		<div class="footerInfo">
+			<p>WarBase - a Warhammer: Age of Sigmar army building tool.
+			<br> Made by fans. Not affiliated with Games Workshop™ in any way.</p>
+		</div>
+		<div class="footerLogo">
+			<img src="./assets/AoS.png" class="AoSLogo" alt="AoSLogo">
+		</div>
 	</div>
-	<div class="footerLogo"><img src="./assets/AoS.png" class="AoSLogo" alt="AoSLogo"></div>
-	<p>2021 © Devillé Manten - for beCode </p>
+	<div class="footerSubsection2">
+		<p>2021 © Devillé Manten - for beCode </p>
+	</div>
 <div>
 </body>
 
