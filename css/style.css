@@ -20,7 +20,7 @@ body .armies .armyTables {
 
 body .armies .armyTables .armyLogos {
   width: 250px;
-  margin: auto;
+  margin-top: 0;
 }
 
 body .footer {
