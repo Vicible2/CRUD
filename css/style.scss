@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "WarBase";
+  src: url("../fonts/long_shot/Long_Shot.ttf");
+}
+
+body {
+  .warBase {
+    font-family: "WarBase", sans-serif;
+    font-size: 9rem;
+  }
+  .armies {
+    .armyTables {
+      display: flex;
+      flex-direction: column;
+      .armyLogos {
+        width: 250px;
+
+        margin: auto;
+      }
+    }
+  }
+  .footer {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: rgba(255,255,255, 0.05);
+      border-radius: 5px;
+      margin: 0px 1vw 2vh;
+      padding:2vh;
+      font-size: 9px;
+      p{
+          margin-bottom: 0;
+      }
+      .AoSLogo {
+          padding-top: 2vh;
+          width: 20vw;
+      }
+  }
+}

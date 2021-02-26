@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "WarBase";
+  src: url("../fonts/long_shot/Long_Shot.ttf");
+}
+
+body .warBase {
+  font-family: "WarBase", sans-serif;
+  font-size: 9rem;
+}
+
+body .armies .armyTables {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .armies .armyTables .armyLogos {
+  width: 250px;
+  margin: auto;
+}
+
+body .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  margin: 0px 1vw 2vh;
+  padding: 2vh;
+  font-size: 9px;
+}
+
+body .footer p {
+  margin-bottom: 0;
+}
+
+body .footer .AoSLogo {
+  padding-top: 2vh;
+  width: 20vw;
+}
+/*# sourceMappingURL=style.css.map */

@@ -6,8 +6,9 @@
 	<meta name="viewport"
 		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>WarBase - track your collection of Warhammer Armies!</title>
+	<title>WarBase - track your collection of Age of Sigmar Armies!</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style.css">
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -15,8 +16,8 @@
 
 <body class="text-light bg-dark">
 
-<blockquote class="blockquote text-center "> <p class="mb-2 h1">WarBase</p>
-<footer class="blockquote-footer text-right">Track your collection of Warhammer Armies! </footer>
+<blockquote class="blockquote text-center "> <p class="mb-2 h1 warBase">WarBase</p>
+<footer class="blockquote-footer text-right">Track your collection of Age of Sigmar Armies! </footer>
 </blockquote>
 
 
@@ -29,8 +30,10 @@
 	<br>
 	<hr>
 	<div class="armies d-flex">
-		<div class="skavenTable">
+		<div class="skavenTable armyTables">
+			<img src="./assets/skavenLogo.png" alt="skavenLogo" class="skavenLogo armyLogos">
 			<h2 class="text-center text-light bg-dark">Skaven</h2>
+
 				<table id='warbase' class="table table-sm table-hover table-dark">
 
 					<tr>
@@ -61,8 +64,10 @@
 				</table>
 			</div>
 
-		<div class="OSBTable">
+		<div class="OSBTable armyTables">
+		<img src="./assets/OSBLogo.png" alt="OSBLogo" class="OSBLogo armyLogos">
 			<h2 class="text-center text-light bg-dark">Ossiarch Bonereapers</h2>
+
 			<table id='warbase' class="table table-sm table-hover table-dark">
 
 				<tr>
@@ -92,8 +97,10 @@
 				</tr>
 			</table>
 		</div>
-		<div class="seraphonTable">
+		<div class="seraphonTable armyTables">
+		<img src="./assets/seraphonLogo.png" alt="seraphonLogo" class="seraphonLogo armyLogos">
 			<h2 class="text-center text-light bg-dark">Seraphon</h2>
+
 			<table id='warbase' class="table table-sm table-hover table-dark">
 
 				<tr>
@@ -162,6 +169,15 @@ var_dump($_POST);
 echo "</pre>";
 ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<div class="footer" id="footer">
+	<div>
+		<p>WarBase - a Warhammer: Age of Sigmar army building tool.
+		<br> Made by fans. Not affiliated with Games Workshop™ in any way.</p>
+	</div>
+	<div class="footerLogo"><img src="./assets/AoS.png" class="AoSLogo" alt="AoSLogo"></div>
+	<p>2021 © Devillé Manten - for beCode </p>
+<div>
 </body>
 
 </html>
