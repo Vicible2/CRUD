@@ -8,6 +8,12 @@ body .warBase {
   font-size: 9rem;
 }
 
+body .armies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 body .armies .armyTables {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,7 +25,11 @@ body .armies .armyTables {
 }
 
 body .armies .armyTables .armyLogos {
-  width: 250px;
+  width: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 250px;
   margin-top: 0;
 }
 

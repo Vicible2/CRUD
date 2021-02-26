@@ -9,11 +9,14 @@ body {
     font-size: 9rem;
   }
   .armies {
+      display: flex;
     .armyTables {
       display: flex;
       flex-direction: column;
       .armyLogos {
-        width: 250px;
+        width: auto;
+        align-self: center;
+        height: 250px;
 
         margin-top: 0;
       }
